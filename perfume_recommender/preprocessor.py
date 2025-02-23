@@ -1,7 +1,6 @@
 import re
 import nltk
-from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import TfidfVectorizer, ENGLISH_STOP_WORDS
 from .config import Config
 
 class TextPreprocessor:

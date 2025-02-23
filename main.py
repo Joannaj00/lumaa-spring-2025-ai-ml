@@ -1,6 +1,7 @@
 from perfume_recommender.data_loader import DataLoader
 from perfume_recommender.preprocessor import TextPreprocessor
 from perfume_recommender.recommender import PerfumeRecommender
+import sys 
 
 def main():
     # Load data
@@ -16,13 +17,14 @@ def main():
     # Get user input
     try:
         user_input = input("Describe the type of perfume you're looking for:\n> ")
+        N = input("How many recommendations do you want?:\n> ")
     except EOFError:
         print("\n[Error] No input detected. Exiting...")
         sys.exit(1)
 
     
     # Get recommendations
-    recommendations = recommender.get_recommendations(user_input)
+    recommendations = recommender.get_recommendations(user_input, N)
     
     # Display recommendations
     output = "\n\nTop Perfume Recommendations:\n"
@@ -34,7 +36,7 @@ def main():
         output += f"Notes: {rec['notes']}\n\n"
         output += "-" * 80 + "\n"
     
-    import sys
+    
     sys.stdout.reconfigure(encoding='utf-8')  # Ensure UTF-8 encoding for terminal output
     print(output)
 

@@ -2,6 +2,8 @@
 
 **Deadline**: Sunday, Feb 23th 11:59 pm PST
 
+**Salary Expectation (Month)**: $25-30/hr or $2300/month given that I will be working 20hrs/week, but open to negotiation
+
 ---
 
 # Perfume Recommendation System 🌸💨✨
@@ -14,6 +16,13 @@ This is a content-based perfume recommendation system that suggests fragrances b
 
 The dataset used for this project is from Kaggle:  
 [**Perfume Recommendation Dataset**](https://www.kaggle.com/datasets/nandini1999/perfume-recommendation-dataset). The dataset is already included in the /data folder.
+
+The dataset contains:
+- Name: The name of the perfume
+- Brand: The brand of the perfume
+- Description: Full description of the perfume
+- Notes, Keywords of the perfume
+- Image URL: The image of the perfume
 
 ---
 
@@ -38,14 +47,19 @@ pip install -r requirements.txt
 ```bash
 python3 main.py
 ```
-- You’ll be prompted to enter a perfume description. Example:
+- You’ll be prompted to enter a perfume description and how many recommendations you want. Example:
 
 ```text
 Describe the type of perfume you're looking for:
-> strong, independent woman living in new york
+> strong, independent woman in new york
+How many recommendations do you want?:
+> 5
 ```
 
 ## Sample Output
+
+I chose not to display the similarity score to ensure a more positive user experience. Since lower scores could sometimes appear across all recommendations, showing them might discourage users or make them question the system's reliability. Instead, the focus remains on delivering the best possible matches.
+
 
 ```text
 Top Perfume Recommendations:
@@ -91,3 +105,4 @@ Notes:  Bergamot, lychee, peach, jasmine, peony, orange blossom, wood, moss, mus
 
 --------------------------------------------------------------------------------
 ```
+

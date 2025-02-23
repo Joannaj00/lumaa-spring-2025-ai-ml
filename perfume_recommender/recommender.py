@@ -22,7 +22,7 @@ class PerfumeRecommender:
         similarity_scores = cosine_similarity(user_vector, self.tfidf_matrix)
         
         # Get top recommendations
-        top_indices = similarity_scores[0].argsort()[::-1][:n_recommendations]
+        top_indices = similarity_scores[0].argsort()[::-1][:int(n_recommendations)]
         
         # Prepare recommendations
         recommendations = []
