@@ -2,26 +2,28 @@
 
 **Deadline**: Sunday, Feb 23th 11:59 pm PST
 
-**Salary Expectation (Month)**: $25-30/hr or $2300/month given that I will be working 20hrs/week, but open to negotiation
+**Salary Expectation (Month)**: $25-30/hr or $2300/month given that I will be working 20hrs/week, but open to negotiation.
 
 ---
 
 # Perfume Recommendation System 🌸💨✨
 
-This is a content-based perfume recommendation system that suggests fragrances based on user descriptions. It uses **TF-IDF vectorization** and **cosine similarity** to match user input with perfumes from a dataset.
+This is a content-based perfume recommendation system that suggests fragrances based on user descriptions. It uses **TF-IDF vectorization** and **cosine similarity** to match user input with perfumes from a dataset. 
 
 ---
 
 ## Dataset
 
-The dataset used for this project is from Kaggle:  
-[**Perfume Recommendation Dataset**](https://www.kaggle.com/datasets/nandini1999/perfume-recommendation-dataset). The dataset is already included in the /data folder.
+- The dataset used for this project is from Kaggle:  
+[**Perfume Recommendation Dataset**](https://www.kaggle.com/datasets/nandini1999/perfume-recommendation-dataset).
+- The dataset is already included in the /data folder. 
+- I chose this dataset because my friends call me a "Human Perfume Recommender" so I was wondering if AI is better than me!
 
 The dataset contains:
 - Name: The name of the perfume
 - Brand: The brand of the perfume
 - Description: Full description of the perfume
-- Notes, Keywords of the perfume
+- Notes: Keywords of the perfume
 - Image URL: The image of the perfume
 
 ---
