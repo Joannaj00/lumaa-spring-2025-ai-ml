@@ -10,6 +10,8 @@
 
 This is a content-based perfume recommendation system that suggests fragrances based on user descriptions. It uses **TF-IDF vectorization** and **cosine similarity** to match user input with perfumes from a dataset. 
 
+**Demo Video**: https://drive.google.com/file/d/1TwwzWJ0q3QmbaGkbTcdiArKw_pSVsrJf/view?usp=sharing
+
 ---
 
 ## Dataset
@@ -33,6 +35,11 @@ The dataset contains:
 ### **Requirements**
 - Python 3.8+
 - Virtual environment (recommended)
+
+```bash
+python3.11 -m venv venv
+source venv/bin/activate
+```
 
 ### **Install Dependencies**
 1. Create a virtual environment (optional but recommended)
